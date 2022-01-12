@@ -1,0 +1,62 @@
+.card{
+  border-radius: .35rem;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+  .card-header{
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 0;
+    color: inherit;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    min-height: 50px;
+    .card-action{
+      color: #818a91;
+
+      .action-item:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown {
+      .dropdown-menu {
+        right: 30px;
+        top: 47px;
+        font-size: .85rem;
+        .dropdown-header {
+          font-weight: 800;
+          font-size: 0.65rem;
+          color: $gray-500;
+          text-transform: uppercase!important;
+        }
+      }
+      &.show{
+        display: block;
+      }
+    }
+
+  }
+  .card-body{
+    padding-bottom: 1rem;
+  }
+
+  .overflow{
+    background-color: rgba(237, 238, 241, 0.58);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    i{
+      font-size: 1.5rem;
+      color: #818a91;
+    }
+  }
+
+
+
+}

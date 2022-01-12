@@ -1,0 +1,15 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('content'); ?>
+
+ <form class="" action="/auth/login/submit" method="post">
+ <?php echo $this->csrf_token(); ?>
+
+ <input type="text" name="username" placeholder="Username">
+ <input type="password" name="password" placeholder="Password">
+ <input type="submit" value="Login">
+ </form>
+
+<?php $this->stopSection(); ?>
+
+<?php if (@$_shouldextend[1]) { echo $this->runChild('auth.layouts'); } ?>

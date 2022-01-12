@@ -1,0 +1,34 @@
+.dataTables_wrapper{
+  .dataTable{
+    td, th{
+      padding: 0.65rem !important;
+      color: #3f3f46 !important;
+    }
+  }
+  .dt-buttons{
+    margin-top: -4px;
+    .btn-light{
+      background-color: transparent;
+      border-color: #ced4da;
+      &:hover{
+        background-color: #f8f9fc;
+      }
+    }
+    .dt-button-background{
+      display: none !important;
+    }
+    .dt-button-collection{
+    }
+    .dropdown-menu{
+      position: unset;
+    }
+  }
+
+  .dataTables_info{
+    display: inline-block;
+  }
+  .dataTables_paginate {
+    display: inline-block;
+    float: right;
+  }
+}

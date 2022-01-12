@@ -1,0 +1,29 @@
+{
+  "name": "mvcapp",
+  "description": "MVCAPP PHP Framework",
+  "keywords": ["framework", "MVCAPP"],
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+      {
+          "name": "Zeyad Moslem",
+          "email": "zeyad.moslem1@gmail.com"
+      }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^4.1",
+    "phpmailer/phpmailer": "^6.1",
+    "facebook/graph-sdk": "^5.7",
+    "filp/whoops": "^2.7",
+    "nesbot/carbon": "^2.31"
+    },
+  "autoload":{
+    "files": [
+      "config/helper.php"
+    ],
+    "psr-4":{
+      "App\\": "app/",
+      "Core\\": "core/"
+    }
+  }
+}

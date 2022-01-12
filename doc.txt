@@ -1,0 +1,18 @@
+1- Create virtual-host in apache2 with DocumentRoot mvcapp/public
+2- change the domain name in .htaccess to the given virtual-host
+3- Create Database and defined it in .env file
+4- create app_user table with the following schema:
+  'UserId'
+  'Username'
+  'Firstname'
+  'Lastname'
+  'Password'
+  'Email'
+  'SubscriptionDate'
+  'LastUpdate'
+  'LastLogin'
+  'GroupId'
+  'Status'
+
+5- create new user in app_user
+6- call the url virtual-host/app-admin
